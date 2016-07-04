@@ -2,7 +2,8 @@
 layout: default
 title: Karl Bao
 ---
-<p>Latest posts</p>
+<h2>LATEST POSTS</h2>
+<hr/>
 <ul>
 　　{% for post in site.posts %}
 　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
