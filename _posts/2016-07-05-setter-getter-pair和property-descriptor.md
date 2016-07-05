@@ -22,6 +22,8 @@ var obj = {
 
 如：访问两次`obj.prop`，控制台会分别输出`now counter is 1`和`now counter is 2`。
 
+<br/>
+
 ### 通过Object.defineProperty()定义对象属性
 
 `Object.defineProperty()`方法可以在对象上定义一个新属性，或修改原有属性。以上创建`get`的语句也可以这样写：
