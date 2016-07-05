@@ -4,6 +4,8 @@ layout: default_post
 
 `set`语句和`get`语句作为**函数**绑定在对象(`Object`)的属性上。当访问该属性时，`get`函数被调用。当对该属性赋值时，`set`函数被调用。
 
+<br/>
+
 ### 创建一个getter
 
 ```javascript
@@ -37,6 +39,7 @@ Object.defineProperty(obj,'prop',{
 ```
 同样地，访问两次`obj.prop`，控制台会分别输出`now counter is 1`和`now counter is 2`。
 
+<br/>
 
 ### 对象属性的两种描述符(Property descriptor)
 
@@ -81,3 +84,12 @@ Object.defineProperty(obj,'counter',{
   configurable: true
 });
 ```
+
+<br/>
+
+### 参考
+
+* 关于描述对象(Descriptor)可以参考[这里](http://es6.ruanyifeng.com/#docs/object#属性的可枚举性)
+* 关于getter可以参考[这里](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/get)
+* setter文中没有详细描述用法，与getter类似，可以看[这里](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/set)
+* Object.defineProperty()方法的用法看[这里](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
