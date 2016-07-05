@@ -10,8 +10,8 @@ layout: default_post
 var obj = {
   counter: 0,
   get prop() {
-   this.counter++;
-   console.log('now counter is '+this.counter);
+    this.counter++;
+    console.log('now counter is '+this.counter);
   }
 }
 ```
@@ -30,8 +30,8 @@ var obj = { counter: 0 };
 // define obj.prop
 Object.defineProperty(obj,'prop',{
   get : function() {
-   this.counter++;
-   console.log('now counter is '+this.counter);
+    this.counter++;
+    console.log('now counter is '+this.counter);
   }
 })
 ```
@@ -60,12 +60,15 @@ Object {value: 0, writable: true, enumerable: true, configurable: true}
 ```javascript
 Object {set: undefined, enumerable: false, configurable: false}
 ```
+
 展开可以查看已经定义的`get`函数。
 
 因此， 上述对`obj.counter`的赋值语句
+
 ```javascript
 var obj = { counter:0 };
 ```
+
 也可以通过`Object.defineProperty()`方法定义，方法中传入的第三个参数对象即为该属性的描述对象(Descriptor)：
 
 ```javascript
