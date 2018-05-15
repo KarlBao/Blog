@@ -8,3 +8,4 @@ future: true
 jailed: false
 theme: jekyll-theme-primer
 gfm_quirks: paragraph_end
+highlighter: rouge
