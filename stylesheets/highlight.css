@@ -163,6 +163,7 @@ bl.highlight table td { padding: 5px; }
 }
 .highlight {
   color: #ffffff;
+  background-color: #222;
 }
 .highlight .n, .highlight .py, .highlight .nx {
   color: #ffffff;
